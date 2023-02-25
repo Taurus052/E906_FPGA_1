@@ -22,9 +22,9 @@ set_property -dict { PACKAGE_PIN W24   IOSTANDARD LVCMOS33 } [get_ports { gpio_p
 set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W23   IOSTANDARD LVCMOS33 } [get_ports { gpio_porta[7] }]; #IO_L20P_T3_A08_D24_14 Sch=led[7]
 set_property src_info {type:XDC file:1 line:43 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN Y23   IOSTANDARD LVCMOS33 } [get_ports { uart_rx_fpga }]; #IO_L1P_T0_12 Sch=uart_rx_out
+set_property -dict { PACKAGE_PIN Y23   IOSTANDARD LVCMOS33 } [get_ports { uart_tx_fpga }]; #IO_L1P_T0_12 Sch=uart_rx_out
 set_property src_info {type:XDC file:1 line:44 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN Y20   IOSTANDARD LVCMOS33 } [get_ports { uart_tx_fpga }]; #IO_0_12 Sch=uart_tx_in
+set_property -dict { PACKAGE_PIN Y20   IOSTANDARD LVCMOS33 } [get_ports { uart_rx_fpga }]; #IO_0_12 Sch=uart_tx_in
 set_property src_info {type:XDC file:1 line:146 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN U27   IOSTANDARD LVCMOS33 } [get_ports { jtg_tdi }]; #IO_L13P_T2_MRCC_14 Sch=ja_p[1]
 set_property src_info {type:XDC file:1 line:147 export:INPUT save:INPUT read:READ} [current_design]
@@ -33,3 +33,7 @@ set_property src_info {type:XDC file:1 line:148 export:INPUT save:INPUT read:REA
 set_property -dict { PACKAGE_PIN T26   IOSTANDARD LVCMOS33 } [get_ports { jtg_tms }]; #IO_L12P_T1_MRCC_14 Sch=ja_p[2]
 set_property src_info {type:XDC file:1 line:149 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T27   IOSTANDARD LVCMOS33 } [get_ports { jtg_tclk }]; #IO_L12N_T1_MRCC_14 Sch=ja_n[2]
+set_property src_info {type:XDC file:1 line:150 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T22   IOSTANDARD LVCMOS33 } [get_ports { jtg_trst_b }]; #IO_L5P_T0_D06_14 Sch=ja_p[3]
+set_property src_info {type:XDC file:1 line:151 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T23   IOSTANDARD LVCMOS33 } [get_ports { jtg_nrst_b }]; #IO_L5N_T0_D07_14 Sch=ja_n[3]

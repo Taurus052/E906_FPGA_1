@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Sat Dec 17 13:22:31 2022
-| Host         : LAPTOP-95S8QNHA running 64-bit major release  (build 9200)
+| Date         : Fri Feb 24 14:56:12 2023
+| Host         : Wenxin-Y9000P running 64-bit major release  (build 9200)
 | Command      : report_methodology -file E906_top_methodology_drc_routed.rpt -pb E906_top_methodology_drc_routed.pb -rpx E906_top_methodology_drc_routed.rpx
 | Design       : E906_top
 | Device       : xc7k325tffg900-2
@@ -23,14 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 717
+             Violations found: 726
 +-----------+------------------+-----------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                               | Violations |
 +-----------+------------------+-----------------------------------------------------------+------------+
 | TIMING-14 | Critical Warning | LUT on the clock tree                                     | 1          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell                               | 649        |
-| LUTAR-1   | Warning          | LUT drives async reset alert                              | 3          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                              | 5          |
 | SYNTH-5   | Warning          | Mapped onto distributed RAM because of timing constraints | 32         |
+| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal                | 7          |
 | TIMING-20 | Warning          | Non-clocked latch                                         | 32         |
 +-----------+------------------+-----------------------------------------------------------+------------+
 
@@ -3288,6 +3289,26 @@ Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
+LUT cell u_soc/x_apb/x_timer1/timer_3/x_pa_clkrst_top/x_pa_rst_top/sys_apb_rst_ff_1st_reg/i_, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[0]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[1]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[2]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[3]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[4]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[5]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[6]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_int_polarity_reg[7]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_inten_reg[0]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_inten_reg[1]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_inten_reg[2]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_inten_reg[3]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_inten_reg[4]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_inten_reg[5]/CLR,
+u_soc/x_apb/x_gpio/x_gpio_apbif/int_gpio_inten_reg[6]/CLR
+ (the first 15 of 1597 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
 LUT cell u_soc/x_cpu_sub_system_ahb/x_e906_top/x_tdt_top/x_tdt_dm_top/x_tdt_dm/FSM_sequential_cur_state[2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_soc/x_ahb/busy_s1_reg/CLR, u_soc/x_ahb/busy_s2_reg/CLR,
 u_soc/x_ahb/busy_s3_reg/CLR, u_soc/x_ahb_fifo/entry_vld_reg/CLR,
 u_soc/x_ahb_fifo/hready_mask_reg/PRE,
@@ -3304,7 +3325,7 @@ u_soc/x_ahb_fifo/x_ahb_fifo_entry0/data_out_reg[20]/CLR
  (the first 15 of 289 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#2 Warning
+LUTAR-1#3 Warning
 LUT drives async reset alert  
 LUT cell u_soc/x_cpu_sub_system_ahb/x_e906_top/x_tdt_top/x_tdt_dm_top/x_tdt_dm/biu_addr[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_soc/x_cpu_sub_system_ahb/biu_addr_reg[0]/CLR,
 u_soc/x_cpu_sub_system_ahb/biu_addr_reg[1]/CLR,
@@ -3324,11 +3345,31 @@ u_soc/x_cpu_sub_system_ahb/pad_cpu_sys_cnt_reg[14]/CLR
  (the first 15 of 76 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#3 Warning
+LUTAR-1#4 Warning
 LUT drives async reset alert  
 LUT cell u_soc/x_cpu_sub_system_ahb/x_e906_top/x_tdt_top/x_tdt_dm_top/x_tdt_dm/ciu_rst_ff_1st_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_clkrst_top/x_pa_rst_top/ciu_rst_ff_1st_reg/CLR,
 u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_clkrst_top/x_pa_rst_top/ciu_rst_ff_2nd_reg/CLR
 u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_clkrst_top/x_pa_rst_top/ciu_rst_ff_3rd_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_dtm_top/x_tdt_dtm_idr/tap5_cur_st[3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_cmd_vld/dst_lvl_src_d_reg/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_cmd_vld/src_pulse_2_lvl_reg/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_cmd_vld/x_tdt_dmi_sync_dff_back/sync_ff_reg[0]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_cmd_vld/x_tdt_dmi_sync_dff_back/sync_ff_reg[1]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_dmihardreset/dst_lvl_src_d_reg/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_dmihardreset/src_pulse_2_lvl_reg/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_dmihardreset/x_tdt_dmi_sync_dff_back/sync_ff_reg[0]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_dmihardreset/x_tdt_dmi_sync_dff_back/sync_ff_reg[1]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_sync_1/dst_lvl_d_reg/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_sync_1/x_tdt_dmi_sync_dff/sync_ff_reg[0]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_apb_master/x_tdt_dmi_pulse_sync_1/x_tdt_dmi_sync_dff/sync_ff_reg[1]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_dtm_top/x_tdt_dtm_chain/tdo_reg/PRE,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_dtm_top/x_tdt_dtm_ctrl/tap5_cur_st_reg[0]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_dtm_top/x_tdt_dtm_ctrl/tap5_cur_st_reg[1]/CLR,
+u_soc/x_cpu_sub_system_ahb/x_tdt_dmi_top/x_tdt_dmi/x_tdt_dtm_top/x_tdt_dtm_ctrl/tap5_cur_st_reg[2]/CLR
+ (the first 15 of 71 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-5#1 Warning
@@ -3489,6 +3530,41 @@ Related violations: <none>
 SYNTH-5#32 Warning
 Mapped onto distributed RAM because of timing constraints  
 The instance u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_core_top/x_pa_core/x_pa_ifu_top/x_pa_ifu_id_pred/x_pa_ifu_bht/x_pa_ifu_bht_array/x_pa_spsram_512x16/x_pa_f_spsram_512x16/RAM_DIN_VEC[9].ram_instance/mem_reg_256_511_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_soc/x_cpu_sub_system_ahb/x_dahb_mem_ctrl/ram1/mem_reg_1_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_soc/x_cpu_sub_system_ahb/x_dahb_mem_ctrl/ram1/mem_reg_3_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_soc/x_cpu_sub_system_ahb/x_dahb_mem_ctrl/ram2/mem_reg_1_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_soc/x_cpu_sub_system_ahb/x_dahb_mem_ctrl/ram2/mem_reg_1_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_soc/x_cpu_sub_system_ahb/x_dahb_mem_ctrl/ram2/mem_reg_3_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_soc/x_cpu_sub_system_ahb/x_dahb_mem_ctrl/ram6/mem_reg_1_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_soc/x_cpu_sub_system_ahb/x_dahb_mem_ctrl/ram6/mem_reg_1_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 TIMING-20#1 Warning

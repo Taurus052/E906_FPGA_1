@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Sat Dec 17 13:22:46 2022
-| Host         : LAPTOP-95S8QNHA running 64-bit major release  (build 9200)
+| Date         : Fri Feb 24 14:56:31 2023
+| Host         : Wenxin-Y9000P running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file E906_top_bus_skew_routed.rpt -pb E906_top_bus_skew_routed.pb -rpx E906_top_bus_skew_routed.rpx
 | Design       : E906_top
 | Device       : 7k325t-ffg900

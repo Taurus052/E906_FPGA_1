@@ -403,6 +403,33 @@ soc_fpga_ram #(8, IMEM_WIDTH-2) ram3(
   .PortAWriteEnable(ram_wen[3]),
   .PortADataOut(ram3_dout));
 
+//soc_fpga_ram2 #(8, IMEM_WIDTH-2,"E:/EDA/Ubuntu_share/vivado_files/case_pat/case3.pat") ram0(
+//  .PortAClk (ram_clk),
+//  .PortAAddr(ram_addr),
+//  .PortADataIn (ram0_din),
+//  .PortAWriteEnable(ram_wen[0]),
+//  .PortADataOut(ram0_dout));
+
+//soc_fpga_ram2 #(8, IMEM_WIDTH-2,"E:/EDA/Ubuntu_share/vivado_files/case_pat/case2.pat") ram1(
+//  .PortAClk (ram_clk),
+//  .PortAAddr(ram_addr),
+//  .PortADataIn (ram1_din),
+//  .PortAWriteEnable(ram_wen[1]),
+//  .PortADataOut(ram1_dout));
+
+//soc_fpga_ram2 #(8, IMEM_WIDTH-2,"E:/EDA/Ubuntu_share/vivado_files/case_pat/case1.pat") ram2(
+//  .PortAClk (ram_clk),
+//  .PortAAddr(ram_addr),
+//  .PortADataIn (ram2_din),
+//  .PortAWriteEnable(ram_wen[2]),
+//  .PortADataOut(ram2_dout));
+
+//soc_fpga_ram2 #(8, IMEM_WIDTH-2,"E:/EDA/Ubuntu_share/vivado_files/case_pat/case0.pat") ram3(
+//  .PortAClk (ram_clk),
+//  .PortAAddr(ram_addr),
+//  .PortADataIn (ram3_din),
+//  .PortAWriteEnable(ram_wen[3]),
+//  .PortADataOut(ram3_dout));
 // &Force("nonport", "ram_addr"); @324
 // &Force("nonport", "ram0_din"); @325
 // &Force("nonport", "ram1_din"); @326

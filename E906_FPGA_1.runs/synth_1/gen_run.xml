@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1671253910" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/E906_top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1677220700" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/E906_top.dcp">
   <File Type="PA-TCL" Name="E906_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="E906_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="E906_top_reports.tcl"/>
@@ -2252,6 +2252,16 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/E906_top.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vivado_files/soc_fpga_ram2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../soc_fpga_ram2.v"/>
+        <Attr Name="ImportTime" Val="1663318069"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

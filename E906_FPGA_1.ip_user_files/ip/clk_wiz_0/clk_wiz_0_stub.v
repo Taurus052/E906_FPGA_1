@@ -1,8 +1,8 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Sat Dec 17 13:06:19 2022
-// Host        : LAPTOP-95S8QNHA running 64-bit major release  (build 9200)
+// Date        : Thu Feb 23 16:33:26 2023
+// Host        : Wenxin-Y9000P running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               e:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.v
 // Design      : clk_wiz_0

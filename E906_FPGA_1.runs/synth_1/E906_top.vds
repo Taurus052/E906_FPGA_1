@@ -2,13 +2,13 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sat Dec 17 13:11:53 2022
-# Process ID: 25584
+# Start of session at: Fri Feb 24 14:38:28 2023
+# Process ID: 17236
 # Current directory: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1
 # Command line: vivado.exe -log E906_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source E906_top.tcl
 # Log file: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1/E906_top.vds
 # Journal file: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1\vivado.jou
-# Running On: LAPTOP-95S8QNHA, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 25480 MB
+# Running On: Wenxin-Y9000P, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 25480 MB
 #-----------------------------------------------------------
 source E906_top.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/utils_1/imports/synth_1/E906_top.dcp
@@ -19,9 +19,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
+WARNING: [Designutils 20-5348] Reverting to default synthesis as last run was incremental and iterative incremental synthesis is disabled in this mode
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11700
+INFO: [Synth 8-7075] Helper process launched with PID 4984
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/smart_run/logical/tb/had_drv.h:323]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/smart_run/logical/tb/had_drv.h:355]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/smart_run/logical/tb/had_drv.h:387]
@@ -41,11 +42,11 @@ WARNING: [Synth 8-2507] parameter declaration becomes local in tdt_dtm_ctrl with
 WARNING: [Synth 8-2507] parameter declaration becomes local in tdt_dtm_ctrl with formal parameter declaration list [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/E906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_ctrl.v:257]
 WARNING: [Synth 8-2507] parameter declaration becomes local in tdt_dtm_ctrl with formal parameter declaration list [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/E906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_ctrl.v:258]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1411.234 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1411.484 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'E906_top' [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/new/E906_top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1/.Xil/Vivado-25584-LAPTOP-95S8QNHA/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1/.Xil/Vivado-25584-LAPTOP-95S8QNHA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1/.Xil/Vivado-17236-Wenxin-Y9000P/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1/.Xil/Vivado-17236-Wenxin-Y9000P/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'soc' [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/smart_run/logical/system/soc.v:17]
 INFO: [Synth 8-6157] synthesizing module 'cpu_sub_system_ahb' [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/smart_run/logical/system/cpu_sub_system_ahb.v:15]
 INFO: [Synth 8-6157] synthesizing module 'openE906' [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/E906_RTL_FACTORY/gen_rtl/cpu/rtl/openE906.v:17]
@@ -486,18 +487,18 @@ WARNING: [Synth 8-7129] Port smpu_entry[23] in module smpu_comp_hit is either un
 WARNING: [Synth 8-7129] Port smpu_entry[22] in module smpu_comp_hit is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1764.961 ; gain = 353.727
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1766.109 ; gain = 354.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1764.961 ; gain = 353.727
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1766.109 ; gain = 354.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1764.961 ; gain = 353.727
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1766.109 ; gain = 354.625
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.979 . Memory (MB): peak = 1764.961 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1766.109 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -510,20 +511,21 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/E906_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1975.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1979.254 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 1975.754 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1979.254 ; gain = 0.000
+WARNING: [Designutils 20-5348] Reverting to default synthesis as last run was incremental and iterative incremental synthesis is disabled in this mode
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1975.754 ; gain = 564.520
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1975.754 ; gain = 564.520
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -534,17 +536,7 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_p. (constraint file  e:/E
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_p. (constraint file  e:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
 Applied set_property KEEP_HIERARCHY = SOFT for u_clk_wiz_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1975.754 ; gain = 564.520
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-WARNING: [Synth 8-6702] IncrSynth : No reusable genomes found, Reverting to default synthesis
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1975.754 ; gain = 564.520
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1975.754 ; gain = 564.520
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'ref_cur_st_reg' in module 'pa_ifu_icache'
 INFO: [Synth 8-802] inferred FSM for state register 'inv_cur_st_reg' in module 'pa_ifu_icache'
@@ -1141,7 +1133,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in modul
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'uart_receive'
 WARNING: [Synth 8-327] inferring latch for variable 'prdata_reg' [E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.srcs/sources_1/imports/opene906-main/smart_run/logical/system/fpga_clk_gen.v:82]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1975.754 ; gain = 564.520
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[0].KID_DUMMY.x_pa_clic_kid' (pa_clic_kid_dummy) to 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[1].KID_DUMMY.x_pa_clic_kid'
 INFO: [Synth 8-223] decloning instance 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[0].KID_DUMMY.x_pa_clic_kid' (pa_clic_kid_dummy) to 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[2].KID_DUMMY.x_pa_clic_kid'
@@ -1154,16 +1146,6 @@ INFO: [Synth 8-223] decloning instance 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_
 INFO: [Synth 8-223] decloning instance 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[0].KID_DUMMY.x_pa_clic_kid' (pa_clic_kid_dummy) to 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[13].KID_DUMMY.x_pa_clic_kid'
 INFO: [Synth 8-223] decloning instance 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[0].KID_DUMMY.x_pa_clic_kid' (pa_clic_kid_dummy) to 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[14].KID_DUMMY.x_pa_clic_kid'
 INFO: [Synth 8-223] decloning instance 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[0].KID_DUMMY.x_pa_clic_kid' (pa_clic_kid_dummy) to 'u_soc/x_cpu_sub_system_ahb/x_e906_top/x_pa_tcipif_top/x_pa_clic_top/INT_KID[15].KID_DUMMY.x_pa_clic_kid'
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : No reusable genomes found
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1714,9 +1696,9 @@ INFO: [Synth 8-4471] merging register 'x_wic_awake_en/x_wic_31/int_vld_ff_reg' i
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/x_pmu/\x_tap2_sm/sm2_write_vld_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/x_gpio/\x_gpio_apbif/int_gpio_swporta_ctl_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/x_wic_top/\x_wic_awake_en/x_wic_31/int_pending_reg )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_smem_ctrl/hresp_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/x_uart/\x_uart_apb_reg/uart_iir_iid_reg[3] )
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/\x_fpga_clk_gen/prdata_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_ahb/busy_s4_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/x_pmu/\x_jtag2pmu_sync/sync_ff_clk2_reg )
@@ -1726,7 +1708,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/x_p
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_apb/x_pmu/debug_pending_reg)
 WARNING: [Synth 8-3332] Sequential element (x_fpga_clk_gen/prdata_reg[31]) is unused and will be removed from module apb.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:37 . Memory (MB): peak = 1994.742 ; gain = 583.508
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:47 ; elapsed = 00:04:20 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2062,7 +2044,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:43 . Memory (MB): peak = 2022.988 ; gain = 611.754
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:53 ; elapsed = 00:04:26 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -2070,7 +2052,7 @@ Start Timing Optimization
 WARNING: [Synth 8-3332] Sequential element (x_pa_ahbl_if/FSM_onehot_ahblif_cur_state_reg[3]) is unused and will be removed from module pa_iahbl_top.
 WARNING: [Synth 8-3332] Sequential element (x_pa_ahbl_if/FSM_onehot_ahblif_cur_state_reg[3]) is unused and will be removed from module pa_dahbl_top.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:15 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Timing Optimization : Time (s): cpu = 00:03:14 ; elapsed = 00:04:48 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2403,110 +2385,110 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram0/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram1/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram2/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram3/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram4/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram5/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram6/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_dahb_mem_ctrl/ram7/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_iahb_mem_ctrl/ram0/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_iahb_mem_ctrl/ram0/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_iahb_mem_ctrl/ram0/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_4/x_iahb_mem_ctrl/ram0/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram0/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram1/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram2/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram3/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram4/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram5/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram6/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_dahb_mem_ctrl/ram7/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_iahb_mem_ctrl/ram0/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_iahb_mem_ctrl/ram0/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_iahb_mem_ctrl/ram0/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_cpu_sub_system_ahbi_5/x_iahb_mem_ctrl/ram0/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:36 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Technology Mapping : Time (s): cpu = 00:03:27 ; elapsed = 00:05:15 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2524,37 +2506,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:23 ; elapsed = 00:02:44 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished IO Insertion : Time (s): cpu = 00:03:34 ; elapsed = 00:05:23 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:23 ; elapsed = 00:02:44 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:34 ; elapsed = 00:05:23 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:29 ; elapsed = 00:02:51 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:41 ; elapsed = 00:05:31 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:30 ; elapsed = 00:02:51 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:41 ; elapsed = 00:05:32 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:31 ; elapsed = 00:02:52 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:43 ; elapsed = 00:05:33 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:31 ; elapsed = 00:02:52 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:43 ; elapsed = 00:05:33 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2574,39 +2556,39 @@ Report Cell Usage:
 |1     |clk_wiz   |     1|
 |2     |BUFG      |     4|
 |3     |CARRY4    |  1060|
-|4     |LUT1      |   227|
-|5     |LUT2      |  3001|
-|6     |LUT3      |  4221|
-|7     |LUT4      |  5472|
-|8     |LUT5      |  7737|
-|9     |LUT6      | 17537|
-|10    |MUXF7     |  1177|
-|11    |MUXF8     |   109|
+|4     |LUT1      |   225|
+|5     |LUT2      |  3030|
+|6     |LUT3      |  4222|
+|7     |LUT4      |  5458|
+|8     |LUT5      |  7716|
+|9     |LUT6      | 17549|
+|10    |MUXF7     |  1175|
+|11    |MUXF8     |   107|
 |12    |RAM256X1S |   116|
 |13    |RAMB18E1  |   192|
 |15    |RAMB36E1  |   288|
-|18    |FDCE      |  7792|
-|19    |FDPE      |   681|
+|18    |FDCE      |  7793|
+|19    |FDPE      |   672|
 |20    |FDRE      |  5890|
 |21    |FDSE      |     1|
 |22    |LD        |    33|
-|23    |IBUF      |     5|
+|23    |IBUF      |     7|
 |24    |IOBUF     |     8|
 |25    |OBUF      |     2|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:32 ; elapsed = 00:02:53 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:43 ; elapsed = 00:05:33 . Memory (MB): peak = 1979.254 ; gain = 567.770
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 286 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:07 ; elapsed = 00:02:44 . Memory (MB): peak = 2347.844 ; gain = 725.816
-Synthesis Optimization Complete : Time (s): cpu = 00:02:32 ; elapsed = 00:02:53 . Memory (MB): peak = 2347.844 ; gain = 936.609
+Synthesis finished with 0 errors, 0 critical warnings and 285 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:19 ; elapsed = 00:05:23 . Memory (MB): peak = 1979.254 ; gain = 354.625
+Synthesis Optimization Complete : Time (s): cpu = 00:03:43 ; elapsed = 00:05:34 . Memory (MB): peak = 1979.254 ; gain = 567.770
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.891 . Memory (MB): peak = 2347.844 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2983 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.937 . Memory (MB): peak = 1979.254 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2979 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2347.844 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1979.254 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 157 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
@@ -2614,13 +2596,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE (inverted pins: G): 1 instance 
   RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 116 instances
 
-Synth Design complete, checksum: 428779
+Synth Design complete, checksum: d06e18bf
 INFO: [Common 17-83] Releasing license: Synthesis
-722 Infos, 217 Warnings, 1 Critical Warnings and 0 Errors encountered.
+721 Infos, 218 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:44 ; elapsed = 00:03:06 . Memory (MB): peak = 2347.844 ; gain = 936.609
+synth_design: Time (s): cpu = 00:03:54 ; elapsed = 00:05:51 . Memory (MB): peak = 1979.254 ; gain = 567.770
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/synth_1/E906_top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2347.844 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1979.254 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file E906_top_utilization_synth.rpt -pb E906_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 17 13:15:18 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 24 14:44:41 2023...

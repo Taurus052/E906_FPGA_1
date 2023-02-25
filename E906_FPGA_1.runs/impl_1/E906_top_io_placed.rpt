@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date                      : Sat Dec 17 13:20:38 2022
-| Host                      : LAPTOP-95S8QNHA running 64-bit major release  (build 9200)
+| Date                      : Fri Feb 24 14:49:45 2023
+| Host                      : Wenxin-Y9000P running 64-bit major release  (build 9200)
 | Command                   : report_io -file E906_top_io_placed.rpt
 | Design                    : E906_top
 | Device                    : xc7k325t
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            17 |
+|            19 |
 +---------------+
 
 
@@ -806,8 +806,8 @@ Table of Contents
 | T19        |               |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | T20        |               | High Range       | IO_L4P_T0_D04_14             | User IO       |             |      14 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | T21        |               | High Range       | IO_L4N_T0_D05_14             | User IO       |             |      14 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
-| T22        |               | High Range       | IO_L5P_T0_D06_14             | User IO       |             |      14 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
-| T23        |               | High Range       | IO_L5N_T0_D07_14             | User IO       |             |      14 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
+| T22        | jtg_trst_b    | High Range       | IO_L5P_T0_D06_14             | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| T23        | jtg_nrst_b    | High Range       | IO_L5N_T0_D07_14             | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | T24        |               | High Range       | VCCO_14                      | VCCO          |             |      14 |            |      |                     |                      |      3.30 |            |           |          |      |                  |              |                   |              |
 | T25        |               | High Range       | IO_L14P_T2_SRCC_14           | User IO       |             |      14 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | T26        | jtg_tms       | High Range       | IO_L12P_T1_MRCC_14           | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
@@ -924,10 +924,10 @@ Table of Contents
 | Y17        |               |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | Y18        |               | High Performance | IO_L15N_T2_DQS_32            | User IO       |             |      32 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | Y19        |               | High Performance | IO_L15P_T2_DQS_32            | User IO       |             |      32 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
-| Y20        | uart_tx_fpga  | High Range       | IO_0_12                      | OUTPUT        | LVCMOS33    |      12 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| Y20        | uart_rx_fpga  | High Range       | IO_0_12                      | INPUT         | LVCMOS33    |      12 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y21        |               | High Range       | IO_L2P_T0_12                 | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | Y22        |               | High Range       | VCCO_12                      | VCCO          |             |      12 |            |      |                     |                      |      3.30 |            |           |          |      |                  |              |                   |              |
-| Y23        | uart_rx_fpga  | High Range       | IO_L1P_T0_12                 | INPUT         | LVCMOS33    |      12 |            |      |                     |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| Y23        | uart_tx_fpga  | High Range       | IO_L1P_T0_12                 | OUTPUT        | LVCMOS33    |      12 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y24        |               | High Range       | IO_L1N_T0_12                 | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | Y25        |               | High Range       | IO_0_13                      | User IO       |             |      13 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | Y26        |               | High Range       | IO_L1P_T0_13                 | User IO       |             |      13 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1671254178">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1677220701">
   <File Type="ROUTE-PWR" Name="E906_top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="E906_top.tcl"/>
   <File Type="BITSTR-MMI" Name="E906_top.mmi"/>
@@ -2318,6 +2318,16 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/E906_top.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vivado_files/soc_fpga_ram2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../soc_fpga_ram2.v"/>
+        <Attr Name="ImportTime" Val="1663318069"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

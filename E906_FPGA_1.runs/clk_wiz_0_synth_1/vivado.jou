@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sat Dec 17 13:05:50 2022
-# Process ID: 23828
+# Start of session at: Thu Feb 23 16:32:58 2023
+# Process ID: 23164
 # Current directory: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/clk_wiz_0_synth_1
 # Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
 # Log file: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
 # Journal file: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.runs/clk_wiz_0_synth_1\vivado.jou
-# Running On: LAPTOP-95S8QNHA, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 25480 MB
+# Running On: Wenxin-Y9000P, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 25480 MB
 #-----------------------------------------------------------
 source clk_wiz_0.tcl -notrace

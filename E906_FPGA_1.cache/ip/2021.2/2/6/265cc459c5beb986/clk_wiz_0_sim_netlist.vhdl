@@ -1,8 +1,8 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Sat Dec 17 12:55:37 2022
--- Host        : LAPTOP-95S8QNHA running 64-bit major release  (build 9200)
+-- Date        : Wed Feb 22 18:53:01 2023
+-- Host        : Wenxin-Y9000P running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ clk_wiz_0_sim_netlist.vhdl
 -- Design      : clk_wiz_0
@@ -17,6 +17,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_wiz_0_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
+    resetn : in STD_LOGIC;
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
   );
@@ -27,6 +28,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_wiz_0_cl
   signal clk_out1_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_buf_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_clk_wiz_0 : STD_LOGIC;
+  signal reset_high : STD_LOGIC;
   signal NLW_plle2_adv_inst_CLKOUT1_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED : STD_LOGIC;
@@ -69,11 +71,11 @@ clkout1_buf: unisim.vcomponents.BUFG
 plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT => 17,
+      CLKFBOUT_MULT => 21,
       CLKFBOUT_PHASE => 0.000000,
       CLKIN1_PERIOD => 5.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE => 17,
+      CLKOUT0_DIVIDE => 12,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT1_DIVIDE => 1,
@@ -92,7 +94,7 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       CLKOUT5_DUTY_CYCLE => 0.500000,
       CLKOUT5_PHASE => 0.000000,
       COMPENSATION => "ZHOLD",
-      DIVCLK_DIVIDE => 4,
+      DIVCLK_DIVIDE => 5,
       IS_CLKINSEL_INVERTED => '0',
       IS_PWRDWN_INVERTED => '0',
       IS_RST_INVERTED => '0',
@@ -121,7 +123,15 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       DWE => '0',
       LOCKED => NLW_plle2_adv_inst_LOCKED_UNCONNECTED,
       PWRDWN => '0',
-      RST => '0'
+      RST => reset_high
+    );
+plle2_adv_inst_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => resetn,
+      O => reset_high
     );
 end STRUCTURE;
 library IEEE;
@@ -131,6 +141,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
     clk_out1 : out STD_LOGIC;
+    resetn : in STD_LOGIC;
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
   );
@@ -144,6 +155,7 @@ inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_clk_wiz_0_clk_wiz
      port map (
       clk_in1_n => clk_in1_n,
       clk_in1_p => clk_in1_p,
-      clk_out1 => clk_out1
+      clk_out1 => clk_out1,
+      resetn => resetn
     );
 end STRUCTURE;

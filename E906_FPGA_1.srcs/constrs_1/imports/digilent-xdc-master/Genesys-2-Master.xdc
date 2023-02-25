@@ -40,8 +40,8 @@ set_property -dict { PACKAGE_PIN W23   IOSTANDARD LVCMOS33 } [get_ports { gpio_p
 #set_property -dict { PACKAGE_PIN AE20  IOSTANDARD LVCMOS33  PULLUP true } [get_ports { ps2_data_0 }]; #IO_25_12 Sch=ps2_data[0]
 
 ## UART
-set_property -dict { PACKAGE_PIN Y23   IOSTANDARD LVCMOS33 } [get_ports { uart_rx_fpga }]; #IO_L1P_T0_12 Sch=uart_rx_out
-set_property -dict { PACKAGE_PIN Y20   IOSTANDARD LVCMOS33 } [get_ports { uart_tx_fpga }]; #IO_0_12 Sch=uart_tx_in
+set_property -dict { PACKAGE_PIN Y23   IOSTANDARD LVCMOS33 } [get_ports { uart_tx_fpga }]; #IO_L1P_T0_12 Sch=uart_rx_out
+set_property -dict { PACKAGE_PIN Y20   IOSTANDARD LVCMOS33 } [get_ports { uart_rx_fpga }]; #IO_0_12 Sch=uart_tx_in
 
 ## SD Card
 #set_property -dict { PACKAGE_PIN P28   IOSTANDARD LVCMOS33 } [get_ports { sd_cd }]; #IO_L8N_T1_D12_14 Sch=sd_cd
@@ -147,8 +147,8 @@ set_property -dict { PACKAGE_PIN U27   IOSTANDARD LVCMOS33 } [get_ports { jtg_td
 set_property -dict { PACKAGE_PIN U28   IOSTANDARD LVCMOS33 } [get_ports { jtg_tdo }]; #IO_L13N_T2_MRCC_14 Sch=ja_n[1]
 set_property -dict { PACKAGE_PIN T26   IOSTANDARD LVCMOS33 } [get_ports { jtg_tms }]; #IO_L12P_T1_MRCC_14 Sch=ja_p[2]
 set_property -dict { PACKAGE_PIN T27   IOSTANDARD LVCMOS33 } [get_ports { jtg_tclk }]; #IO_L12N_T1_MRCC_14 Sch=ja_n[2]
-#set_property -dict { PACKAGE_PIN T22   IOSTANDARD LVCMOS33 } [get_ports { ja[4] }]; #IO_L5P_T0_D06_14 Sch=ja_p[3]
-#set_property -dict { PACKAGE_PIN T23   IOSTANDARD LVCMOS33 } [get_ports { ja[5] }]; #IO_L5N_T0_D07_14 Sch=ja_n[3]
+set_property -dict { PACKAGE_PIN T22   IOSTANDARD LVCMOS33 } [get_ports { jtg_trst_b }]; #IO_L5P_T0_D06_14 Sch=ja_p[3]
+set_property -dict { PACKAGE_PIN T23   IOSTANDARD LVCMOS33 } [get_ports { jtg_nrst_b }]; #IO_L5N_T0_D07_14 Sch=ja_n[3]
 #set_property -dict { PACKAGE_PIN T20   IOSTANDARD LVCMOS33 } [get_ports { ja[6] }]; #IO_L4P_T0_D04_14 Sch=ja_p[4]
 #set_property -dict { PACKAGE_PIN T21   IOSTANDARD LVCMOS33 } [get_ports { ja[7] }]; #IO_L4N_T0_D05_14 Sch=ja_n[4]
 

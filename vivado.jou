@@ -12,3 +12,5 @@
 #-----------------------------------------------------------
 start_gui
 open_project E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.xpr
+update_compile_order -fileset sources_1
+reset_project

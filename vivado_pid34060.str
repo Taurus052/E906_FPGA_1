@@ -112,3 +112,28 @@ Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: open_project E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.xpr 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/EDA/vivado/Vivado/2021.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1412.027 ; gain = 0.000 
+// [GUI Memory]: 138 MB (+11925kb) [00:00:15]
+// Project name: E906_FPGA_1; location: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1; part: xc7k325tffg900-2
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 147 MB (+2315kb) [00:00:21]
+// [GUI Memory]: 164 MB (+10187kb) [00:00:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+// Tcl Command: 'rdi::info_commands {re*}'
+// Tcl Command: 'rdi::info_commands {rese*}'
+// Tcl Command: 'rdi::info_commands {reset*}'
+// Tcl Command: 'rdi::info_commands {reset*}'
+// Tcl Command: 'rdi::info_commands {reset_*}'
+// Tcl Command: 'rdi::info_commands {reset_pro*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "reset_pro", true); // l
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "reset_project"); // l
+// Tcl Command: 'reset_project'
+// Tcl Command: 'reset_project'
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_project 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL

@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command=".planAhead." Owner="Wenxin Li" Host="WENXIN-Y9000P" Pid="5516">
-    </Process>
-</ProcessHandle>

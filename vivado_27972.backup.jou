@@ -2,13 +2,15 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sun Jul  9 11:55:22 2023
-# Process ID: 34060
+# Start of session at: Sat May 20 12:44:57 2023
+# Process ID: 27972
 # Current directory: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20620 E:\EDA\Ubuntu_share\vivado_files\E906_FPGA_1\E906_FPGA_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6456 E:\EDA\Ubuntu_share\vivado_files\E906_FPGA_1\E906_FPGA_1.xpr
 # Log file: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/vivado.log
 # Journal file: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1\vivado.jou
 # Running On: Wenxin-Y9000P, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 25480 MB
 #-----------------------------------------------------------
 start_gui
 open_project E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1

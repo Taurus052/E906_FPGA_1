@@ -1,0 +1,114 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 34060
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Jul 09 11:55:40 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 2560x1600
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.11 64-bit
+Java home: 	E:/EDA/vivado/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	E:/EDA/vivado/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Wenxin Li
+User home directory: C:/Users/Wenxin Li
+User working directory: E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/EDA/vivado/Vivado
+HDI_APPROOT: E:/EDA/vivado/Vivado/2021.2
+RDI_DATADIR: E:/EDA/vivado/Vivado/2021.2/data
+RDI_BINDIR: E:/EDA/vivado/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/Wenxin Li/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/Wenxin Li/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/Wenxin Li/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	E:/EDA/vivado/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/vivado.log
+Vivado journal file: 	E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/vivado.jou
+Engine tmp dir: 	E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/.Xil/Vivado-34060-Wenxin-Y9000P
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/EDA/vivado/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: E:/EDA/vivado/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: E:/EDA/vivado/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: E:/EDA/vivado/Vivado/2021.2
+XILINX_VIVADO: E:/EDA/vivado/Vivado/2021.2
+XILINX_VIVADO_HLS: E:/EDA/vivado/Vivado/2021.2
+
+
+GUI allocated memory:	308 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,410 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 91 MB (+93396kb) [00:00:06]
+// [Engine Memory]: 1,410 MB (+1327364kb) [00:00:06]
+// Opening Vivado Project: E:\EDA\Ubuntu_share\vivado_files\E906_FPGA_1\E906_FPGA_1.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,410 MB. GUI used memory: 68 MB. Current time: 7/9/23, 11:55:41 AM CST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 121 MB (+25710kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  2235 ms.
+// Tcl Message: open_project E:/EDA/Ubuntu_share/vivado_files/E906_FPGA_1/E906_FPGA_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/EDA/vivado/Vivado/2021.2/data/ip'. 
